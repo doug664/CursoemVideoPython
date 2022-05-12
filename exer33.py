@@ -1,13 +1,26 @@
-# programa que 3 numeros e diz qual é o maior e qaul é o menor
+#Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
 
-num1 = int(input('digite numero: '))
-num2 = int(input('Digite numero: '))
-num3 = int(input('Digite numero: '))
+num1 = int(input('numero um: '))
+num2 = int(input('numero dois: '))
+num3 = int(input('numero tres: '))
 
-if num1 > num2:
-    print(' o numero {} é o maior'.format(num1))
+# verificando quem é menor
+menor = num1
+if num2 < num1 and num2 < num3:
+    menor = num2
 
-if num2 > num3:
-    print( 'O numero {} é o menor'.format(num3))
-else:
-    print('O numero {} é o maior')
+if num3 < num1 and num3 < num2:
+    menor = num3
+
+
+#verificando quem é o maior
+maior = num1
+if num2 > num1 and num2 > num3:
+    maior = num2
+if num3 >  num1 and num3 > num2:
+    maior = num3
+
+print(f'o menor é {menor}') # 3° forma de usar o print 
+print(f'O maior numero é o {maior}')
+
+
