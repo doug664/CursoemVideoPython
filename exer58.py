@@ -11,3 +11,12 @@ while comp != jogador:
     tentativas += 1
 
 print(f'Você acertou, e tentou {tentativas} vezes')
+
+'''
+variando para dicas com if e else
+
+if jogador < computador:
+    print( mais, digitou novamente)
+else:
+    print(menos , digite outro numero)
+'''
