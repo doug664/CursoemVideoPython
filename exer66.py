@@ -8,5 +8,5 @@ while True:
     soma += num 
     contador += 1
 
-print(f'Foram digitados {contador} numeros e soma dos deles é de {soma}')
+print(f'Foram digitados {contador} numeros e soma deles é de {soma}')
 

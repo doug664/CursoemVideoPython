@@ -3,10 +3,10 @@
 num = 0
 c = 1
 while True:
+    num = int(input('Digite um numero para ver a sua tabuada: '))
     if num < 0:
         break
     else:
-        num = int(input('Digite um numero para ver a sua tabuada: '))
         while c <= 10:
             print(f'{num} x {c} = {num * c}')
             c += 1
