@@ -1,0 +1,48 @@
+Curso em video Python Aulas 17
+
+as listas s�o variaveis compostas,
+diferentes das tuplas as listas s�o mutaveis e podem receber novos valores
+
+para novos valores use ex: lanche.append('coke') # insere no final
+para elementos em outras posi��es ex: lanche.insert(0, 'cachorro quente')
+
+para eliminar os valores
+del lanche[5]
+lanche.pop(3) # faz pelo indice ou usando somente pop() deleta o ultimo elemento
+lanche.remove('pizza') faz a remo��o pelo elemento, fazendo do come�o da lista, se houver valores repetidos remove o primeiro que aparece
+
+Para uma lista vazia
+valores = []
+ou 
+valores = list()
+
+Para receber valores pelo teclado e adicionar em  uma lista com for:
+for cont in range(0,5):
+	valores.append(int(input('Digite um numero: ')))
+
+Para exibir os valores atraves do for:
+
+for c, v enumerate(valores):
+	print('Posi��o {c} com 	valor {v})
+print('fim)
+
+OBS: com o enumerate exibe o indice e depois o valor
+
+Para criar uma lista a aprtir do range, com isso cria uma lista organizada
+ex:
+valores = list(range(4,11))# cria uma lista com elementos que vai de 4  ate 10
+
+para valores em ordem:
+valores.sort()
+valores.sort(reverse=True)# para a ordem reversa
+
+Para saber o tamanho da lista use:
+len(valores)
+
+Para criar uma lista, sendo essa lista uma copia de outra
+
+a = [2,5,4,8]
+b = a[:] # faz com que a lista b receba a copia da lista de a
+
+
+Programa��o � paciencia , criatividade e pratica
