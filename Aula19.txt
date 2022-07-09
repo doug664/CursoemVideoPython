@@ -1,0 +1,139 @@
+
+Parte teorica
+
+Dicionarios
+Estruturas de dados semelhantes as tuplas e listas, a diferença é que os incices são literais, são identificados com {} = chaves
+
+Ex:
+dados = dict()
+        ou
+dados {'nome: 'Pedro', 'idade': 25}
+print(['nome']) # Pedro
+print(['idade']) # 25
+
+OBS: os dicionarios não suportam o metodo append, então para adicionar novos elementos use: dados['sexo']= 'M' 
+com o codigo acima vai adicionar no final o elemento sexo = metodo
+
+Para deletar um elemento é so usar o del ex:
+del dados['idade']
+
+Outro exemplo:
+
+filme = { 'titulo': star Wras',
+            'ano':1977,
+            'diretor': 'George Lucas'
+}
+
+OBS: é importante saber a diferença entre itens , chaves e valores, pois com isso podemos exibir cada um de forma separada como: 
+
+Para acessar os valores do dicionario:
+  print(filme.values())
+
+para acessar as chaves:
+  print(filme.keys())
+
+para acessar os valores e chaves juntos use:
+  print(filme.items())
+
+  OBS: Com o entendimento de itens, chaves e valores, podemos usar essa combinação com o for para acessar esses elementos  e exibir de forma dinamica como:
+
+1 - Exibido os valores:
+    for k in filme.values():
+        print(k)
+        # Exibe Gustavo, 25 'M'
+
+2 - exibindo as chaves:
+    for k in filme.keys():
+        print(k)
+        # Exibe Nome, idade e sexo
+
+3 - exibindo os itens:
+
+  for k, v in filme.items():
+        print(f'O {k} é {v}')
+        # O filme é Stars wars
+
+OBS: Para lembrar - nas tuplas e listas o semelhante ao .itens() seria o for com o enumerate 
+
+Juntando tuplas listas e dicionarios:
+
+vamos criar uma lista locadora, com 3 elementos, cada elemento dentro da lista será um dicioario com:
+0
+titulo: stars wars
+ano: 1977
+diretor: george lucas
+
+1
+titulo: Avengers
+ano: 2012
+diretor: Joss whidon
+
+2
+titulo: Matrix
+ano: 1999
+diretor: hachowski
+
+para acessar os elementos:
+
+print(locadora[0]['ano']) #1977
+print(locadora[2]['titulo'])
+
+Deu pra entender?
+
+Exemplos de codigos:
+
+1
+pessoas = {'Nome': Douglas, 'idade': 22, 'sexo': 'M'}
+
+print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
+
+OBS: quando usar as aspas simples, dentro das aspas simples usar aspas duplas para os indices literais
+
+2
+
+brasil = []
+estado1 = {'uf':'Rio de janeiro', 'sigla': 'RJ'}
+estadso2 = {'uf':'São paulo', 'sigla': 'SP'}
+brasil.append(estado1)
+brasil.append(estado2)
+
+print(brasil)
+print(brasil[0])
+print(brasil[1])
+print(brasil[0]['uf'])
+print(brasil[1]['sigla'])
+
+OBS: neste codigo acima é criado uma lista brasil que recebe 2 dicionarios estado1 e estasdo2, ao fazer o print exibe exatamente a estrutura onde identificamos os [] para a lista e as {} para o dicionario.
+E tambem de forma separada quando com o print(brasil[0]) exibe o estado1 e print(brasil[1]) - exibe o estado 2
+
+Usando o metodo .copy()
+
+OBS: diferente das listas, com o sodicionarios não podemos usar o fatiamento que seria dados[:] que cria uma copia de uma lista sem alterar a lista original, para isso usamos o copy() que serve para os dicionarios.
+exemplo de codigo com o .copy()
+
+estado = dict()
+brasil = list()
+
+for c in range(0,3):
+    estado['uf'] = str(input('Unidade Federativa: '))
+    estado['sigla'] = str(input('Sigla do estado: '))
+    brasil.append(estado.copy())
+print(brasil)
+
+OBS: O for vai repetir 3 vezes e ao final a lista brasil recebe com o copy a copia do dicionario com os dados e exibe com o print
+
+melhorando o codigo anterior:
+
+for c in range(0,3):
+    estado['uf'] = str(input('Unidade Federativa: '))
+    estado['sigla'] = str(input('Sigla do estado: '))
+    brasil.append(estado.copy())
+
+for e in brasil:
+    for k, v in e.items():
+        print(f' o campo {k} tem valor {v})
+
+OBS:
+
+o primeiro for e in brasil faz o laço para os indices, sendo cada indice um dicionario
+ja o segundo for vai acessar os valores e chaves do e que são os dicionarios
