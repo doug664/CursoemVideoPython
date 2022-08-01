@@ -1,0 +1,129 @@
+
+
+ - Interactive Help - ajuda interativa - 
+
+Para usar a ajuda interativa:
+1 - abra um terminal, pode ser no vccode
+2 - entre no console do python, basta digitar python
+3 - agora digite help() para entrar
+4 - agora é só digitar os comandos para ver as informações deles como: print, len, date 
+5 - para sair digite quit
+
+outra forma mais simples
+
+basta digitar o comando dentro da função print e mandar executar
+
+help(print)
+help(input)
+
+Outra forma de obter ajuda é acessar o doc dos comandos:
+Ex:
+print(input.__doc__)
+
+Ao executar aprece as informações no console
+
+
+ - Docstrings - 
+
+O que é ?
+
+São as strings de documentação(manuais) dos comandos
+
+OBS:
+com as docstrings podemos descrever funções que o usuario mesmo cria,
+exemplo :
+digamos que vc cria uma função contagem com 3 paramentros
+
+def contagem(i, f, p)
+
+Então, podemos com as docstrigns descrever o que faz a função, para isso basta usar:
+
+"""
+    -> função contagem:
+    i inicio da contagem
+    f - final da cointagem
+    p - passo da contagem
+
+"""
+
+OBS:
+tudo o que estiver dentro das 3 as duplas, podemos ter acesso com a função help basta usar
+
+help(contador)
+
+e essas informações tem que estar dentro da função logo abaixo dela
+
+ex:
+
+def contagem(i, f, p):
+"""
+    -> função contagem:
+    i inicio da contagem
+    f - final da cointagem
+    p - passo da contagem
+
+"""
+    codigos da função...
+
+
+
+ - Parametros opcionais - 
+
+ para usar os paaramentros opcionais basta declarar um valor a eles ex: a=0, b=0, c=0, com isso ao executar a função com esses parametros, não terá erro, ou ao informar só 2 parametros do total de 3 a função será executada sem erros 
+
+ ex:
+
+ def somar(a=0, b=0, c=0):
+ s = a + b+ c
+ print(f'a soma total é {s}')
+
+ então ao chamar a funçãocomo
+
+ somar(3,2,5)
+ somar(8,4)
+ somar()
+
+ o python não retornará erro, por que são parametros opcionais, ou seja um parametro com valor padrão
+
+
+  - escopo de variaveis - 
+
+  o que é?
+  é o local onde a variavel vai exixtir ou o local onde não vai existir
+
+  Explicando:
+  variaves que são declaradas dentro de funções são variaveis de escopo local , só podem ser usadas denrtro da função, agora se variavel forem criadas fora de funçãoes essas sãode escopo global, podem ser usadas dentro e fora de funções
+
+
+  OBS:
+
+  Na liguagem python existe uma diferança para outras liguaguens de programação em relação ao espoco. se tiver uma variavel global a = 5 e se cria uma variavel a = 8 dentro de uma função, então a=5 que é global será diferente de a=8 local
+
+  E como definir uma variavel global para ser usada dentro de uma função?
+
+  def function():
+    global a
+    a = 8
+
+
+ a=5
+
+ OBS: usando a palavra 'global a' com isso a variavel a = 8 será global e a=5 terá valor 8
+
+
+  - Retornando valores - 
+
+  dentro das funções em python, elas podem ou não retornar valores
+
+para funções com retorno:
+
+def somar(a, b, c)
+    s = a + b + c
+    return s
+
+com isso podemos personalizar os resultados
+
+r1 = somar(3, 5, 2)
+r2 = somar(6, 7)
+
+print(f'A soma dos valores é {r1} {r2}')

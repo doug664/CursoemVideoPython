@@ -1,0 +1,101 @@
+Funções com python
+Para usar uma função em python use:
+
+def nome-da-funcao():
+    codigos da função
+
+Para usar função com parametros em python use:
+
+def nome-da-funcao(parametro):
+    print(parametro)
+
+OBS: ao chamar a função, deve se usar um parametro com:
+    nome-dafunção('Olá Mundo)
+
+ - Outros exemplos praticos com função - 
+
+ def soma(a, b):
+    s = a + b
+
+
+Parar executar:
+soma(4, 5) # 9
+OBS: para não houver erros ao usar uma função, deve-se deixar 2 espaços depois de escrever a função
+
+
+Podemos também em funções, explicitar o parametro não importa a ordem dele:
+
+def soma(a, b):
+    print(f' A = {a} e B = {b}')
+    s = a + B
+    print(f'A soma de A + B = {s}')
+
+Ao mandar executar de forma explicita:
+soma(a=5, b=7) 
+
+
+Com o python podemos excutar funções com varios parametros, a isso damos o nome de enpacotamento de parametros.
+
+Mas como isso funciona?
+Basta definir a função com um asterisco junto do parametro:
+    def contador(*num):
+
+com o asterisco o programa entende que vai receber um numero indefinido de parametros, que serão adicionados em num. exemplos
+
+def contador(* num):
+    print(num)
+
+Ao chmar a função mais de uma vez:
+    contador(2, 1, 7)
+    contador(8, 8)
+    contador(4, 4, 7, 6, 2)
+
+com isso vai retonar os numeros passados em uma tupla
+
+Dessa forma podemos usar o enpacotamento com um for dentro da função:
+
+def contador(* num):
+    for valor in num:
+        print(f'{valor}', end='')
+    print('fim')
+
+podemos também exibir a quantidade de numeros passados usando o enpacotamento: 
+
+def contador(* num):
+    tan = len(num)
+    print(f'O s valores recebidos{num} e ao todo são {tan} numeros)
+    
+
+Com o entendimento de enpacotamento, podemos assim, usar a função soma() para diversos valores:
+
+def soma(* valores):
+    s = 0
+    for num in valores:
+        s += num
+    print(f'A soma dos valores {valores }passados é {s}')
+
+
+Ao chamar a função teremos o resultado da soma dos vaolres passados
+
+soma(3, 5, 7)
+soma(2, 5)
+
+
+ - Funções e listas - 
+
+Exemplo:
+
+def dobra(lst):
+    pos = 0
+    while pos < len(lst):
+    lst[pos] *= 2
+    pos += 1
+
+valores = [6, 3, 9, 1, 0, 2]
+
+Ao chamar a função, passamos a lista valores como paramentro, depois,  usamos o print na lista valores e verifica-se  que os valores foram dobrados
+
+dobra(valores)
+print(valores)
+
+
