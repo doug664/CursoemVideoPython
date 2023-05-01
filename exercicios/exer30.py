@@ -1,4 +1,4 @@
-# programa que se numero é par ou impar
+# programa que mostra se um numero é par ou impar
 
 num = int(input('Digite um numero: '))
 

@@ -20,7 +20,7 @@ if num2 > num1 and num2 > num3:
 if num3 >  num1 and num3 > num2:
     maior = num3
 
-print(f'o menor é {menor}') # 3° forma de usar o print 
+print(f'o menor é {menor}') # 3° forma de usar o print print(f"{variavel}")
 print(f'O maior numero é o {maior}')
 
 

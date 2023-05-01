@@ -12,7 +12,7 @@
 # Com o import da clase math
 
 import math # pode se usar também from math import hypot
-co = float(input('Digite o cateto opsoto: '))
+co = float(input('Digite o cateto oposto: '))
 ca = float(input('Digite o cateto adjacente: '))
 
 hip = math.hypot(co, ca)

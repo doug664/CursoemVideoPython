@@ -1,4 +1,4 @@
-# program que exibe o valor da passagem para onibus
+# program que exibe o valor da passagem para uma viagem
 
 print('Viagem: 0,50 por kilomentro até 200Km\n 0,45 por kilomentro acima de 200Km')
 
@@ -13,3 +13,7 @@ else:
     print('O valor da sua viagem é de {}'.format(valor))
 
     print('\n Fim do Programa')
+
+
+#Outra forma de fazer simplificada
+# preco = distancia * 0.50 if distancia <= 200 else preço = distancia * 0.45

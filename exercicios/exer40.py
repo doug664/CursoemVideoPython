@@ -1,3 +1,4 @@
+# programa que lê as notas de aluno e retorna a sua media, sewndo versão mais atual de um exercicio anterior usando agora if e else 
 
 n1 = float(input('Digite a primeira nota'))
 

@@ -1,3 +1,4 @@
+# Programa que recebe o ano de nascimento e retorna se a pessoa deve fazer o alistamento militar
 
 from datetime import date
 anoNasc = int(input('Digite seu ano de nascimento: '))

@@ -1,3 +1,6 @@
+
+#Programa que recebe numeros e diz qual é o maior ou se são iguais
+
 num1 = int(input('escreva o numero 1: '))
 num2 = int(input('escreva o numero 2: '))
 

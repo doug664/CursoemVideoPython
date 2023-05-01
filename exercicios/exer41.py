@@ -1,3 +1,5 @@
+# programa que recebe o ano de nascimentode atleta e exibe qual a sua categoria
+
 from datetime import date
 
 anoNasc = int(input('Quasl o ano de nascimento do atleta? '))
