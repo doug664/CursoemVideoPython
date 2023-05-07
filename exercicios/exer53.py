@@ -2,7 +2,7 @@
 # A sacada da casa 
 # a torre da derrota
 # o lobo ama o bolo
-# anotaram a adata da maratona
+# anotaram a data da maratona
 
 frase = str(input('Digite uma frase: ')).strip().upper()
 print(f'Sua frase é: {frase}')
@@ -23,5 +23,8 @@ else:
     print('A frase não é palidromo')
 
 
-
-
+# OBS:
+#  1 Com o split, cada palavra separada por espaço se torna um valor em #    uma lista. com isso, usando o .join(palavras) cada palavra da lista #    vira uma unica string sem espaços
+#  2  a técnica do fatiamento em inverso = junto[::-1] funciona assim:
+#     os dois primeiros pontos(:) está pegando do começo da string, os  #     dois segundos pontos(:) vai até o final da string, o -1 exibe a 
+#     string de trás para a frente

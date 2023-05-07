@@ -1,3 +1,5 @@
+# programa que recebe os pesos de 5 pessoas e retorna o maior pesso e o menor peso
+
 
 maior = 0
 menor = 0

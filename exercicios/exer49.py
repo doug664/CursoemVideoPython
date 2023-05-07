@@ -1,4 +1,4 @@
-#tabuada com for
+#tabuada com for, evoluindo o exercicio 9
 
 num = int(input('Digite um numero para ver sua tabuada: '))
 

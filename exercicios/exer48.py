@@ -1,3 +1,5 @@
+#programa que recebe numeros de 1 a 500 e exibe e soma os mltiplos de 3
+
 
 # 1 forma de fazer
 soma = 0
