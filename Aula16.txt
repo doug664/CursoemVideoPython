@@ -1,0 +1,67 @@
+Aqui começa o mundo 3 de python
+
+Conteudos dessa Aula:
+- tuplas
+
+
+obs: em python temos 3 tipos de variaveis compostas que são:
+tuplas, listas e dicionarios
+
+Fundamentos:
+variaveis compostas podem receber varios valores
+os elementos em uma tupla são identificados por indices, os indices sõa numeros, o primeiro indice de uma tupla é o zero(0).
+para suar uma tupla use parenteses()
+as tuplas são imutaveis, ou seja os valores definidos em uma tupla não podem ser alterados quando o programa estiver em execusão
+tuplas podem ter valores de tipos diferentes, ou seja podem ser numeros, string, boolean
+
+ - Exemplos de codigos - 
+
+lanche = ('ham','suco','pizza','pudim')
+print(lanche) #exibe todos os valores
+print(lanche[1]) # exibe o valor na posição 1
+print(lanche[1:3]) # usando o fatiamento
+print(lanche[-2]) # exibe o valor pizza
+print(len(lanche)) # exibe a quantidade de valores dentro de lanche que é 4
+print(sorted(lanche)) # exibe os elementos em ordem
+
+for comida in lanche:
+    print(c) # vai fazer um loop exibindo cada valor da variavel lanche
+
+ou
+
+for comida in range(0,  len(lanche)):
+    print(lanche[comida]) # tambem exibe cada valor dentro de lanche
+
+#Outra forma de fazer, mostrando a posição também
+ for comida in range(0,  len(lanche)):
+    print(f' Na posição {comida} temos o lanche {lanche[comida]}')
+
+#Ou podemos usar o enumerate
+for posicao, comida in enumerate(lanche)
+    print('Eu vou comer {comida} na posição {posicao}')
+
+
+Podemos ter também tuplas dentro de tuplas, exemplo:
+
+a = (2,5,4)
+b = (5,8,1,2)
+c = a + b
+print(c)
+
+neste exemplo a tupla c recebe as tuplas a e b, o sinal de mais(+) está apenas fazendo a concatenação das tuplas
+
+Com isso podemos usar alguns metodos internos da tupla compostas
+
+print(c.count(5)) # exibe o numero que representa o total de vezes exlementos que são o numero 5
+print(c.index(5)) # exibe o valor da chve onde está o numero 5, se o numero não existir aparece zero(0)
+
+# usando o index com o deslocamento
+print(c.index(5, 1)) 
+
+#nesta parte que tem (5, 1 ) isso é o deslocamento, ou seja se existir valores repetidos, cada valor repetido estará em uma posição diferente e para saber essa posição usamos esse deslocamento, então no exemplo,  a apartir posição 1 - que é o segundo paramentro dentro de index() vai exibir o numero da chave do numero 5
+
+
+Não podemos deletar um elemento mais podemos deltar a tupla inteira, para isso use del() como no exemplo
+
+pessoa = ('Gustavo','39','M')
+del(pessoa)
